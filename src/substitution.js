@@ -1,11 +1,5 @@
-// Please refrain from tampering with the setup code provided here,
-// as the index.html and test files rely on this setup to work properly.
-// Only add code (helper methods, variables, etc.) within the scope
-// of the anonymous function on line 6
-
 const substitutionModule = (function () {
-  // you can add any code you want within this function scope
-
+  // Function for encoding and decoding messages using the substitution cipher
   function substitution(input, alphabet, encode = true) {
     // Check if the substitution alphabet is missing or not exactly 26 characters
     if (!alphabet || alphabet.length !== 26) {
@@ -58,13 +52,13 @@ const substitutionModule = (function () {
     // Return the result
     return result;
   }
-  
-  
-  
-  
+
+  // Expose the substitution function
   return {
     substitution,
   };
 })();
 
+// Export the substitution function for testing purposes
 module.exports = { substitution: substitutionModule.substitution };
+

@@ -4,6 +4,8 @@
 // of the anonymous function on line 6
 
     const caesarModule = (function () {
+
+    // Caesar function for encoding and decoding messages using the Caesar cipher
       function caesar(input, shift, encode = true) {
         if (!shift || shift === 0 || shift < -25 || shift > 25) {
           return false;

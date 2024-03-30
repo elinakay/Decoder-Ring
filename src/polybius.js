@@ -62,12 +62,11 @@ const polybiusModule = (function () {
     return resultArray.join("");
   }
 
-  // Expose the polybius function
   return {
     polybius,
   };
 })();
 
-// Export the polybius function for testing purposes
+
 module.exports = { polybius: polybiusModule.polybius };
 

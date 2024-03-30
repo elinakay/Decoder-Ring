@@ -53,12 +53,11 @@ const substitutionModule = (function () {
     return result;
   }
 
-  // Expose the substitution function
   return {
     substitution,
   };
 })();
 
-// Export the substitution function for testing purposes
+
 module.exports = { substitution: substitutionModule.substitution };
 
